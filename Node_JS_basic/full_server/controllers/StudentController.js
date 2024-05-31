@@ -5,9 +5,14 @@ class StudentsController {
     readDatabase(DATABASE)
       .then((fields) => {
         const students = [];
-
+        // let count = 0;
         let msg;
 
+        // for (const key of Object.keys(fields)) {
+        //   count += fields[key].length;
+        // }
+
+        // students.push(`Number of students: ${count}`);
         students.push('This is the list of our students');
 
         for (const key of Object.keys(fields)) {
